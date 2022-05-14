@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation | Odin Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="./high-five.png" alt="high five icon" />
+    </div>
+    <form novalidate>
+      <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+      <div class="form-field">
+        <label for="email"
+          >Email<abbr title="required" aria-label="required">*</abbr></label
+        >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autofocus
+          autocomplete="off"
+          placeholder="mail@mail.com"
+          required
+        />
+        <span class="error" aria-live="polite">&nbsp;</span>
+      </div>
+      <div class="form-field">
+        <label for="country">Country</label>
+        <input
+          type="text"
+          name="country"
+          id="country"
+          autocomplete="off"
+          placeholder="Serbia"
+        />
+        <span class="error" aria-live="polite">&nbsp;</span>
+      </div>
+      <div class="form-field">
+        <label for="zip">Zip Code</label>
+        <input
+          type="text"
+          name="zip"
+          id="zip"
+          autocomplete="off"
+          placeholder="21000"
+        />
+        <span class="error" aria-live="polite">&nbsp;</span>
+      </div>
+      <div class="form-field">
+        <label for="password"
+          >Password<abbr title="required" aria-label="required">*</abbr></label
+        >
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="off"
+          placeholder="********"
+          required
+        />
+        <span class="error" aria-live="polite">&nbsp;</span>
+      </div>
+      <div class="form-field">
+        <label for="password-confirm"
+          >Confirm password<abbr title="required" aria-label="required"
+            >*</abbr
+          ></label
+        >
+        <input
+          type="password"
+          name="password-confirm"
+          id="password-confirm"
+          placeholder="********"
+          autocomplete="off"
+          required
+        />
+        <span class="error" aria-live="polite">&nbsp;</span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
